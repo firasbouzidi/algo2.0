@@ -1,0 +1,30 @@
+ALGORITHM algorithm_name
+VAR
+    set_declarations
+BEGIN
+    set_instructions
+END
+# initialize counters to 0
+length = 0
+wordCount = 0
+vowelCount = 0
+
+# read sentence character by character
+sentence = input("Enter a sentence: ")
+for char in sentence:
+    # increment length counter
+    length += 1
+
+    # increment word counter if character is a space
+    if char == ' ':
+        wordCount += 1
+
+    # increment vowel counter if character is a vowel
+    if char in 'aeiouAEIOU':
+        vowelCount += 1
+
+# add 1 to word counter for last word
+wordCount += 1
+END FOR 
+END IF 
+END
